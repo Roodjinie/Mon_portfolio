@@ -436,6 +436,7 @@ textarea::placeholder {
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+        margin-top: 0;
     }
 
     .nav-links {
@@ -525,6 +526,7 @@ textarea::placeholder {
     margin: 0 auto;
     padding: 0 5%;
 }
+
 
 
 
