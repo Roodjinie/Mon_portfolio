@@ -432,19 +432,28 @@ textarea::placeholder {
     }
 
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .nav-links {
         margin-top: 15px;
         flex-wrap: wrap;
         justify-content: center;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0;
     }
     
     .nav-links li a {
         margin: 5px 10px;
+        font-size: 0.8em;
+        margin-left: 10px
     }
 }
+    .logo {
+        font-size: 1.2em;}
 /* Ajoutez ce style à la fin de votre fichier style.css */
 
 .hero-image img,
@@ -505,3 +514,4 @@ textarea::placeholder {
     margin: 0 auto;
     padding: 0 5%;
 }
+
