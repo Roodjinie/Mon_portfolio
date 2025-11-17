@@ -418,7 +418,7 @@ textarea::placeholder {
     .projects-grid,
     .skills-container,
     .form-row {
-        flex-direction: column;
+        flex-direction: row;
         gap: 30px;
     }
 
@@ -524,5 +524,6 @@ textarea::placeholder {
     margin: 0 auto;
     padding: 0 5%;
 }
+
 
 
