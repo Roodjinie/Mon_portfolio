@@ -448,14 +448,18 @@ textarea::placeholder {
     
     .nav-links li a {
         margin: 0 4px;
-        font-size: 0.7em;
+        font-size: 0.4em;
         margin-left: 10px
     }
 }
     .logo {
-        font-size: 1.1em;
+        font-size: 0.8em;
         line-height: 1.1;
         flex-shrink: 0;
+    }
+    .hero-text h1 {
+        font-size: 1.8em;
+        line-height: 1.1;
     }
 /* Ajoutez ce style à la fin de votre fichier style.css */
 
@@ -517,6 +521,7 @@ textarea::placeholder {
     margin: 0 auto;
     padding: 0 5%;
 }
+
 
 
 
