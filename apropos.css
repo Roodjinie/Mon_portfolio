@@ -462,7 +462,7 @@ textarea::placeholder {
         line-height: 1.1;
     }
     .hero-section {
-        padding: 30px 0 30px;
+        padding: 10px 0 20px;
         min-height: auto;
 /* Ajoutez ce style à la fin de votre fichier style.css */
 
@@ -524,6 +524,7 @@ textarea::placeholder {
     margin: 0 auto;
     padding: 0 5%;
 }
+
 
 
 
