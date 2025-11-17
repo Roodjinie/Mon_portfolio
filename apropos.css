@@ -433,26 +433,30 @@ textarea::placeholder {
 
     .navbar {
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
     }
 
     .nav-links {
-        margin-top: 15px;
         justify-content: center;
         display: flex;
         justify-content: flex-end;
         margin-top: 0;
+        flrx-wrap: nowrap;
     }
     
     .nav-links li a {
-        margin: 5px 10px;
-        font-size: 0.8em;
+        margin: 0 4px;
+        font-size: 0.7em;
         margin-left: 10px
     }
 }
     .logo {
-        font-size: 1.2em;}
+        font-size: 1.1em;
+        line-height: 1.1;
+        flex-shrink: 0;
+    }
 /* Ajoutez ce style à la fin de votre fichier style.css */
 
 .hero-image img,
@@ -513,6 +517,7 @@ textarea::placeholder {
     margin: 0 auto;
     padding: 0 5%;
 }
+
 
 
 
