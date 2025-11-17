@@ -22,10 +22,11 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     background-color: var(--bg-light);
+    overflow-x: hidden;
 }
 
 .section {
-    padding: 80px 10%;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -40,9 +41,10 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background-color: transparent; /* Pour la mettre au-dessus du gradient */
-    position: absolute;
+    padding: 10px 0;
+    background-color: var(--text-light); /* Pour la mettre au-dessus du gradient */
+    background-color: white;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 10;
@@ -67,13 +69,13 @@ h2 {
 }
 
 .nav-links li a.active {
-    color: var(--primary-color);
+    color: var(blue);
 }
 
 /* --- HERO SECTION (BANNER) --- */
 .hero-section {
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-    padding: 120px 10% 80px;
+    padding: 60px 0 80px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -319,7 +321,7 @@ h2 {
 /* --- SECTION CONTACT (FOOTER) --- */
 .contact-section {
     background-color: var(--bg-dark);
-    padding: 80px 10%;
+    padding: 80px 0;
     text-align: center;
     color: var(--text-light);
 }
@@ -488,4 +490,18 @@ textarea::placeholder {
         flex-direction: row; 
         justify-content: space-between;
     }
+}
+.content-wrapper {
+    max-width: 1200px; /* Définissez la largeur max désirée pour votre contenu */
+    margin: 0 auto; /* Centre le conteneur */
+    padding: 0 5%; /* Padding pour les petits écrans, si vous en voulez un */
+    width: 100%;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
 }
