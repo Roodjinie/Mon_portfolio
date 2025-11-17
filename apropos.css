@@ -451,7 +451,6 @@ textarea::placeholder {
         font-size: 0.4em;
         margin-left: 10px
     }
-}
     .logo {
         font-size: 0.8em;
         line-height: 1.1;
@@ -461,6 +460,11 @@ textarea::placeholder {
         font-size: 1.8em;
         line-height: 1.1;
     }
+    .hero-section navbar {
+        padding: 10px 0 20px;
+        min-height: auto;
+    }
+}
 /* Ajoutez ce style à la fin de votre fichier style.css */
 
 .hero-image img,
@@ -521,6 +525,7 @@ textarea::placeholder {
     margin: 0 auto;
     padding: 0 5%;
 }
+
 
 
 
