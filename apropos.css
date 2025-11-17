@@ -397,7 +397,6 @@ textarea::placeholder {
 
 /* --- RESPONSIVE (pour les petits écrans) --- */
 @media (max-width: 1024px) {
-    /* Styles de contenu (gardés comme vous les aviez pour l'empilement du contenu) */
     .hero-content {
         flex-direction: column;
         text-align: center;
@@ -429,41 +428,31 @@ textarea::placeholder {
     }
 
     .about-photo {
-        order: -1;
+        order: -1; /* Place la photo au-dessus du texte sur mobile */
     }
 
-    /* --- CORRECTIONS DE LA NAVIGATION --- */
     .navbar {
         flex-direction: row;
-        /* 👇 AJOUT CRUCIAL : Empêche le passage à la ligne */
-        flex-wrap: nowrap; 
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    /* 👇 AJUSTEMENT DU LOGO : Doit être dans la media query pour ne s'appliquer qu'aux petits écrans */
-    .logo {
-        font-size: 1.1em; /* Réduire encore la taille de la police */
-        /* 👇 AJOUT UTILE : Assure qu'il n'y a pas de rétrécissement excessif */
-        flex-shrink: 0; 
-    }
-    
     .nav-links {
-        /* 👇 Retirez le margin-top: 15px qui créait un espace */
-        margin-top: 0; 
+        margin-top: 15px;
+        justify-content: center;
         display: flex;
         justify-content: flex-end;
-        /* 👇 AJOUT CRUCIAL : Empêche l'empilement des liens */
-        flex-wrap: nowrap; 
+        margin-top: 0;
     }
     
     .nav-links li a {
-        /* Réduisez l'espace et la taille au minimum */
-        font-size: 0.75em; 
-        margin: 0 6px; /* Réduire l'espacement autour des liens */
-        /* 👇 AJOUT UTILE : Assure qu'ils ne disparaissent pas */
-        flex-shrink: 0; 
+        margin: 5px 10px;
+        font-size: 0.8em;
+        margin-left: 10px
     }
 }
+    .logo {
+        font-size: 1.2em;}
 /* Ajoutez ce style à la fin de votre fichier style.css */
 
 .hero-image img,
@@ -524,6 +513,7 @@ textarea::placeholder {
     margin: 0 auto;
     padding: 0 5%;
 }
+
 
 
 
